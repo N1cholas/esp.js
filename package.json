@@ -1,0 +1,19 @@
+{
+  "name": "esp.js",
+  "version": "0.1.0",
+  "description": "Lightweight event subscription publisher.",
+  "main": "eps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N1cholas/esp.js.git"
+  },
+  "author": "N1cholas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/N1cholas/esp.js/issues"
+  },
+  "homepage": "https://github.com/N1cholas/esp.js#readme"
+}
