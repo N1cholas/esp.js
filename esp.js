@@ -3,7 +3,7 @@ let Event = (function () {
   _default,
   Event
 
-  // 默认的命名空间
+  // The default namespace
   _default = 'default'
 
   Event = (function () {
@@ -15,10 +15,10 @@ let Event = (function () {
     _create,
     namespaceCache
 
-    // 命名空间
+    // Namespaces
     namespaceCache = {}
 
-    // 外部迭代器
+    // External iterator
     _iterator = function (array) {
       let
       _current,
@@ -40,13 +40,13 @@ let Event = (function () {
       return { next, isDone, getCurrentIndex, getCurrentItem }
     }
 
-    // 订阅事件
+    // Subscribe to events
     _listen = (cache, key, fn) => {
       if (!cache[key]) cache[key] = []
       cache[key].push(fn)
     }
 
-    // 取消订阅事件
+    // Cancel the subscription event
     _remove = (cache, key, fn) => {
       let fns = cache[key]
 
@@ -60,7 +60,7 @@ let Event = (function () {
         fns.length = 0
     }
 
-    // 发布事件
+    // Publish event
     _trigger = function (cache, key, res) {
       let fns = cache[key]
 
@@ -78,11 +78,11 @@ let Event = (function () {
         stack.next()
       }
 
-      // 解除闭包引用
+      // Unblock the reference
       stack = null 
     }
 
-    // 创建命名空间并暴露接口
+    // Create a namespace and expose the interface
     _create = namespace => {
       let 
       space,
@@ -91,9 +91,9 @@ let Event = (function () {
       ret
 
       space = namespace ? namespace : _default
-      // 订阅事件列表
+      // Subscribe to the event list
       cache = {}
-      // 离线消息列表
+      // Offline message list
       offlineCache = {}
 
       ret = {
