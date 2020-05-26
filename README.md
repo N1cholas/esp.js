@@ -1,12 +1,4 @@
 # esp.js
-> Lightweight event subscription publisher.:laughing::laughing::laughing:
+> Event Subscription Publisher.:laughing::laughing::laughing:
 
-## Implemented functionality
-
-- Rreate a namespace
-- Subscription
-- Release
-- Delete the subscription
-- Offline release
-
-
+超轻量级事件订阅发布器
